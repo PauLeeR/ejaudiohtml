@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio prueba</title>
+</head>
+<body>
+	<center>
+		<img src="music.jpg">
+	</center>
+	<audio id="player" src="take-me-out.mp3" preload="auto"></audio>
+	<div>
+	<center>
+		<button onclick="document.getElementById('player').play();">Reproducir</button>
+		<button onclick="document.getElementById('player').pause();">Pausa</button>
+		<button onclick="document.getElementById('player').currentTime=0;">Stop</button>
+		<button onclick="document.getElementById('player').currentTime-=1.5;">Rewind</button>
+		<button onclick="document.getElementById('player').currentTime+=2.0;">Forward</button>
+		<button onclick="document.getElementById('player').volume+=0.2;">Subir volumen</button>
+		<button onclick="document.getElementById('player').volume-=0.2;">Bajar volumen</button>
+		
+	</center>
+	</div>
+	<br>
+	<script src="assets/js/javascript.js"></script>
+</body>
+</html>
